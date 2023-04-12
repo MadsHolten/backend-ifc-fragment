@@ -1,0 +1,32 @@
+{
+  "name": "backend-ifc-fragment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && rollup -c && node bundle-fixer.js",
+    "execute": "node dist/bundle.js test.ifc",
+    "build-docker": "docker build -t backend-ifc-fragment ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "22.0.2",
+    "@rollup/plugin-node-resolve": "14.1.0",
+    "@types/three": "0.143",
+    "rollup": "2.79.1",
+    "ts-node": "10.0.0",
+    "typescript": "4.3.2"
+  },
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "bim-fragment": "^0.0.17",
+    "canvas": "^2.11.0",
+    "cross-blob": "^3.0.2",
+    "node-fetch": "^3.3.0",
+    "three": "0.135",
+    "vblob": "^1.0.2",
+    "web-ifc": "^0.0.36"
+  }
+}
