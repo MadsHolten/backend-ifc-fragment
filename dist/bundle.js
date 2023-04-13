@@ -106368,3 +106368,4 @@ async function ConvertIfcToFragments(ifcURL) {
 }
 
 exports.ConvertIfcToFragments = ConvertIfcToFragments;
+exports.IfcFragmentLoader = IfcFragmentLoader;

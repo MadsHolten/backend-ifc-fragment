@@ -3,6 +3,8 @@ import { Serializer } from 'bim-fragment';
 const fs = require('fs');
 const archiver = require('archiver');
 
+export * from "./ifc-fragment-loader"
+
 function zipDirectory(sourceDir: string, outPath: string) {
 	const archive = archiver('zip', { zlib: { level: 9 }});
 	const stream = fs.createWriteStream(outPath);

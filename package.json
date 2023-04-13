@@ -1,13 +1,14 @@
 {
   "name": "backend-ifc-fragment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "bundle.js",
   "scripts": {
-    "build": "tsc && rollup -c && node bundle-fixer.js",
+    "build": "tsc && rollup -c",
     "execute": "node dist/bundle.js test.ifc",
     "build-docker": "docker build -t backend-ifc-fragment .",
-    "copy-files": "cpy package.json dist"
+    "copy-files": "cpy package.json dist",
+    "publish-repo": "npm run copy-files && cd dist && npm publish"
   },
   "keywords": [],
   "author": "",
