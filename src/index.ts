@@ -20,6 +20,15 @@ function zipDirectory(sourceDir: string, outPath: string) {
 	});
 }
 
+export async function ConvertIfcToFragmentsBinary(buffer: Buffer){
+	const loader = new IfcFragmentLoader();
+	const serializer = new Serializer();
+	console.log(`Starting file conversion to fragments...`);
+	const result = await loader.load(buffer);
+	console.log(`File successfully converted to fragments. Serializing data...`);
+	return serializer.export(result.fragments);
+}
+
 export async function ConvertIfcToFragments(ifcURL: string) {
 	// const ifcURL = process.argv[2];
 	console.log(`Reading IFC file: ${ifcURL}`);
