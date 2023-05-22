@@ -1,19 +1,17 @@
 import {nodeResolve} from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import dts from "rollup-plugin-dts";
+import typescript from '@rollup/plugin-typescript';
 
 // This creates the bundle used by the examples
 export default {
-    input: "js/index.js",
+    input: "src/index.ts",
     output: [
         {
-            file: "./dist/bundle.js",
+            file: "./dist/index.js",
             format: "cjs",
+            sourcemap: true,
             inlineDynamicImports: true,
-        }, {
-            file: "dist/bundle.d.ts",
-            format: "es"
         }
     ],
-    plugins: [nodeResolve(), commonjs(), dts()],
+    plugins: [nodeResolve(), commonjs(), typescript()],
 };
