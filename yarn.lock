@@ -1605,10 +1605,10 @@ vblob@^1.0.2:
     eventtarget "^0.1.0"
     tmp "0.0.33"
 
-web-ifc@^0.0.36:
-  version "0.0.36"
-  resolved "https://registry.npmjs.org/web-ifc/-/web-ifc-0.0.36.tgz"
-  integrity sha512-1C3h8Qf7TpEByJTpTt/yzZbnAuByH0hEEfOiVQho83Y6lKNCDWe/0cKObExZMAi2XMDIiES6cYL43PsQ3rHo2A==
+web-ifc@0.0.40:
+  version "0.0.40"
+  resolved "https://registry.yarnpkg.com/web-ifc/-/web-ifc-0.0.40.tgz#ac20cdcc065ca33767b16354c2df403344934448"
+  integrity sha512-/lmogVLudvTjrWwxyfPywx6G1iWz2UAlhO1n8HVin188k4u54Cq2RpESmypj3EzsiJzgfON5Suq6xgbRuB25Bg==
 
 web-streams-polyfill@^3.0.3:
   version "3.2.1"
